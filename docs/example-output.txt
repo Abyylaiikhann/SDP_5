@@ -1,0 +1,45 @@
+DELIVERY REQUEST #105
+Automatic selection: Balanced
+Fastest -> R2 | time 23.1 min | cost 4916.00 | CO2 4.00 kg | score 23.1000
+  Base time=22 min; traffic x1.05; weather +0 min; final=23.1 min
+  Rejected: R7: unavailable; R8: restricted
+Cheapest -> R5 | time 51.5 min | cost 2056.00 | CO2 2.50 kg | score 2056.0000
+  Total cost=1900.0 base + 12*13.0 distance + 0 urgent surcharge = 2056.0
+  Rejected: R7: unavailable; R8: restricted
+Eco-friendly -> R6 | time 33.0 min | cost 5108.00 | CO2 1.50 kg | score 3.0000
+  Eco score=0.8*1.5 kg CO2 + 0.2*9.0 km = 3.0
+  Rejected: R7: unavailable; R8: restricted
+Balanced -> R4 | time 42.0 min | cost 2880.00 | CO2 0.90 kg | score 0.6237
+  Weighted normalized time/cost/distance/CO2, weights=[0.4, 0.3, 0.1, 0.2]; score=0.6237
+  Rejected: R7: unavailable; R8: restricted
+Distance-first -> R6 | time 33.0 min | cost 5108.00 | CO2 1.50 kg | score 9.0000
+  Minimum feasible distance=9.0 km
+  Rejected: R7: unavailable; R8: restricted
+--- STRATEGY COMPARISON ---
+Fastest -> R2 | time 23.1 min | cost 4916.00 | CO2 4.00 kg | score 23.1000
+  Base time=22 min; traffic x1.05; weather +0 min; final=23.1 min
+  Rejected: R7: unavailable; R8: restricted
+Cheapest -> R5 | time 51.5 min | cost 2056.00 | CO2 2.50 kg | score 2056.0000
+  Total cost=1900.0 base + 12*13.0 distance + 0 urgent surcharge = 2056.0
+  Rejected: R7: unavailable; R8: restricted
+Eco-friendly -> R6 | time 33.0 min | cost 5108.00 | CO2 1.50 kg | score 3.0000
+  Eco score=0.8*1.5 kg CO2 + 0.2*9.0 km = 3.0
+  Rejected: R7: unavailable; R8: restricted
+Balanced -> R4 | time 42.0 min | cost 2880.00 | CO2 0.90 kg | score 0.6237
+  Weighted normalized time/cost/distance/CO2, weights=[0.4, 0.3, 0.1, 0.2]; score=0.6237
+  Rejected: R7: unavailable; R8: restricted
+Distance-first -> R6 | time 33.0 min | cost 5108.00 | CO2 1.50 kg | score 9.0000
+  Minimum feasible distance=9.0 km
+  Rejected: R7: unavailable; R8: restricted
+Auto URGENT: Fastest -> R2 | time 23.1 min | cost 4916.00 | CO2 4.00 kg | score 23.1000
+  Base time=22 min; traffic x1.05; weather +0 min; final=23.1 min
+  Rejected: R7: unavailable; R8: restricted
+Auto ECONOMY: Cheapest -> R5 | time 51.5 min | cost 2056.00 | CO2 2.50 kg | score 2056.0000
+  Total cost=1900.0 base + 12*13.0 distance + 0 urgent surcharge = 2056.0
+  Rejected: R7: unavailable; R8: restricted
+Auto ECO: Eco-friendly -> R6 | time 33.0 min | cost 5108.00 | CO2 1.50 kg | score 3.0000
+  Eco score=0.8*1.5 kg CO2 + 0.2*9.0 km = 3.0
+  Rejected: R7: unavailable; R8: restricted
+Auto STANDARD: Balanced -> R4 | time 42.0 min | cost 2880.00 | CO2 0.90 kg | score 0.6237
+  Weighted normalized time/cost/distance/CO2, weights=[0.4, 0.3, 0.1, 0.2]; score=0.6237
+  Rejected: R7: unavailable; R8: restricted

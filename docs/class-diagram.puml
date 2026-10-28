@@ -1,0 +1,35 @@
+@startuml
+skinparam classAttributeIconSize 0
+class RoutePlanner { - strategy: RouteStrategy
++ setStrategy(RouteStrategy)
++ plan(routes, request): RouteDecision }
+interface RouteStrategy { + decide(routes, request): RouteDecision
++ selectRoute(routes, request): Route
++ getStrategyName(): String }
+abstract class AbstractRouteStrategy
+class FastestRouteStrategy
+class CheapestRouteStrategy
+class EcoFriendlyRouteStrategy
+class BalancedRouteStrategy
+class DistanceFirstRouteStrategy
+class StrategySelector { - strategies: Map<DeliveryPriority, RouteStrategy>
++ register(priority, strategy)
++ select(request): RouteStrategy }
+class ComparisonService
+record Route
+record Location
+record DeliveryRequest
+record RouteDecision
+RoutePlanner o--> RouteStrategy
+AbstractRouteStrategy ..|> RouteStrategy
+FastestRouteStrategy --|> AbstractRouteStrategy
+CheapestRouteStrategy --|> AbstractRouteStrategy
+EcoFriendlyRouteStrategy --|> AbstractRouteStrategy
+BalancedRouteStrategy --|> AbstractRouteStrategy
+DistanceFirstRouteStrategy --|> AbstractRouteStrategy
+StrategySelector --> RouteStrategy
+ComparisonService --> RouteStrategy
+RouteDecision --> Route
+Route --> Location
+RouteStrategy ..> DeliveryRequest
+@enduml
